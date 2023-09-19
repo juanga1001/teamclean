@@ -1,13 +1,14 @@
 const data = [
-    {
-      id: 1,
-      title: "RESIDENTIAL CLEANING",
-      description:
-        "Maintaining a clean home shouldn’t be sacrificed due to a busy schedule. TEAM CLEAN is here to help.",
-      alt: "Residential Cleaning Service Team Clean",
-      image:
-        "https://i.postimg.cc/W4b9q6ZG/team-clean-residential-cleaning-service.jpg",
-    },
+    // Unhide this section to show the residential cleaning card
+    // {
+    //   id: 1,
+    //   title: "RESIDENTIAL CLEANING",
+    //   description:
+    //     "Maintaining a clean home shouldn’t be sacrificed due to a busy schedule. TEAM CLEAN is here to help.",
+    //   alt: "Residential Cleaning Service Team Clean",
+    //   image:
+    //     "https://i.postimg.cc/W4b9q6ZG/team-clean-residential-cleaning-service.jpg",
+    // },
     {
         id: 2,
         title: "COMMERCIAL CLEANING",
