@@ -7,6 +7,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 export default function QuoteForm() {
+  const shouldShowResidential  = false;
+
   const [size, setSize] = React.useState(700);
   const [baths, setBaths] = React.useState(1);
   const [beds, setBeds] = React.useState(1);
@@ -174,12 +176,14 @@ export default function QuoteForm() {
         >
           COMMERCIAL
         </h3>
-        <h3
-          onClick={() => setClient("residential")}
-          className={client === "residential" ? "Service-selected" : ""}
-        >
-          RESIDENTIAL
-        </h3>
+        {shouldShowResidential && (
+          <h3
+            onClick={() => setClient("residential")}
+            className={client === "residential" ? "Service-selected" : ""}
+          >
+            RESIDENTIAL
+          </h3>
+        )}
       </div>
       <form onSubmit={sendEmail} ref={form} className="Quote-form">
         <input type="text" name="client" value={client} className="btn-hide" />
